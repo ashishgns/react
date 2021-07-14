@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
-//import App from './ListForm';
+// import App from './ListForm';
 //import App from './Api';
 //import App from './Toggle';
 // import App from './Login';
@@ -15,7 +15,16 @@ import './index.css';
 // import App from './NstComponent';
 // import App from './MultiContext';
 // import App from './Fragment';
-import App from './hello';
+// import App from './hello';
+// import App from './user';
+// import App from './toggle';
+// import App from './card';
+// import App from './formik';
+// import App from './NameForm';
+// import App from './FileInput';
+import App, {Homea, Abouta} from './Main';
+
+
 // import { add } from './math.js';
 import reportWebVitals from './reportWebVitals';
 

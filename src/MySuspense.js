@@ -13,7 +13,7 @@ const FancyButton = React.forwardRef((props, ref) => (
 
 
 function MySuspense() {
-  // You can now get a ref directly to the DOM button:
+  {/*You can now get a ref directly to the DOM button:*/}
   const ref = React.createRef();
 
   return (
@@ -30,21 +30,3 @@ function MySuspense() {
 }
 
 export default MySuspense;
-
-
-/*import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-const Home = lazy(() => import('./routes/Home'));
-const About = lazy(() => import('./routes/About'));
-
-const MySuspense = () => (
-  <Router>
-    <Suspense fallback={<div>Loading...</div>}>
-      <Switch>
-        <Route exact path="/" component={Home} /><Route path="/about" component={About} />
-      </Switch>
-    </Suspense>
-  </Router>
-);
-
-export default MySuspense;*/
