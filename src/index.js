@@ -22,11 +22,16 @@ import './index.css';
 // import App from './formik';
 // import App from './NameForm';
 // import App from './FileInput';
-import App, {Homea, Abouta} from './Main';
-
+// import App, {Homea, Abouta} from './Main';
+import store from './store';
+import App from './reduxTest';
+import {Provider} from 'react-redux';
 
 // import { add } from './math.js';
 import reportWebVitals from './reportWebVitals';
+
+
+// store.subscribe(() => console.log(store.getState()));
 
 // console.log(add(16, 26));
 
@@ -36,7 +41,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
